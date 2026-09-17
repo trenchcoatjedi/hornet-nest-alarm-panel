@@ -1,17 +1,15 @@
-text_sensor:
-  # Determine the IP Address of the wESP32 and Expose to HA
-  - platform: ethernet_info
-    internal: true
-    ip_address:
-      name: Ethernet IP Address
-      entity_category: diagnostic
-  # Determine the Device ID (Mac Address) of the wESP32 and Expose to HA
-  - platform: template
-    internal: true
-    name: Device ID
-    id: device_id
-    entity_category: diagnostic
-    update_interval: never
+# text_sensor:
+#   # Determine the IP Address of the wESP32 and Expose to HA
+#   - platform: ethernet_info
+#     ip_address:
+#       name: Ethernet IP Address
+#       entity_category: diagnostic
+#   # Determine the Device ID (Mac Address) of the wESP32 and Expose to HA
+#   - platform: template
+#     name: Device ID
+#     id: device_id
+#     entity_category: diagnostic
+#     update_interval: never
     
 sensor:
   # Expose the Board Uptime to HA
