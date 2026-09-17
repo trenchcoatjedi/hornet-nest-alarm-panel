@@ -97,3 +97,6 @@ output:
   - platform: ledc
     pin: GPIO23
     id: buzzer_output
+
+rtttl:
+  output: buzzer_output
